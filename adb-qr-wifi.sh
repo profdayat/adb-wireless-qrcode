@@ -95,7 +95,7 @@ function connect() {
     echo "🔗 Connecting to ADB Device: $address"
     
     for attempt in {1..3}; do
-        connect_port=$(nmap $address -p 37000-50000 | awk "/\/tcp/" | cut -d/ -f1)
+        connect_port=$(nmap $address -p 30000-50000 | awk "/\/tcp/" | cut -d/ -f1)
         adb connect "$address:$connect_port" 2>&1
 
         if [ $? -eq 0 ]; then
