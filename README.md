@@ -41,7 +41,7 @@ sudo apt update && sudo apt install adb nmap fping qrencode -y
    - Select "Pair device with QR code".
 2. Run the script in the terminal:
    ```sh
-   ./adb_wireless.sh
+   ./adb-qr-wifi.sh
    ```
 3. Scan the QR Code displayed in the terminal using your Android device.
 4. Wait for the script to detect and pair with the device automatically.
